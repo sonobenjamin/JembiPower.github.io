@@ -110,8 +110,8 @@ A 90 anni a causa di una maculopatia degenerativa Rita diventa parzialmente ciec
                 <li>
                     <p>Quale continente non ha confini con l'Oceano Atlantico?</p>
                     <ul id="risposte">
-                        <li><input type="radio" name="Matematica" value="A"> Matematica</li>
-                        <li><input type="radio" name="Scienze" value="B"> Scienze</li>
+                        <li><input type="radio" id="Matematica" name="ciao" value="A"> Matematica</li>
+                        <li><input type="radio" id="Scienze" name="ciao" value="B"> Scienze</li>
                     </ul>
                 </li>
                 </ul>
@@ -123,8 +123,8 @@ A 90 anni a causa di una maculopatia degenerativa Rita diventa parzialmente ciec
                 <li>
                     <p>Quale continente non ha confini con l'Oceano Atlantico?</p>
                     <ul id="risposte">
-                        <li><input type="radio" name="Algebra" value="A"> Algebra</li>
-                        <li><input type="radio" name="Geometria" value="B"> Geometria</li>
+                        <li><input type="radio" id="Algebra" name="ciao" value="A"> Algebra</li>
+                        <li><input type="radio" id="Geometria" name="ciao" value="B"> Geometria</li>
                     </ul>
                 </li>
                 </ul>
@@ -136,10 +136,10 @@ A 90 anni a causa di una maculopatia degenerativa Rita diventa parzialmente ciec
                 <li>
                     <p>Quale continente non ha confini con l'Oceano Atlantico?</p>
                     <ul id="risposte">
-                        <li><input id="r1" type="radio" name="Fisica" value="A"> Fisica</li>
-                        <li><input id="r2" type="radio" name="Chimica" value="B"> Chimica</li>
-                        <li><input id="r3" type="radio" name="Biologia" value="C"> Biologia</li>
-                        <li><input id="r4" type="radio" name="Astronomia" value="D"> Astronomia</li>
+                        <li><input type="radio" id="Fisica" name="ciao" value="A"> Fisica</li>
+                        <li><input type="radio" id="Chimica" name="ciao" value="B"> Chimica</li>
+                        <li><input type="radio" id="Biologia" name="ciao" value="C"> Biologia</li>
+                        <li><input type="radio" id="Astronomia" name="ciao" value="D"> Astronomia</li>
                     </ul>
                 </li>
                 </ul>
@@ -154,8 +154,8 @@ A 90 anni a causa di una maculopatia degenerativa Rita diventa parzialmente ciec
     </div>
   <script>
 function showHiddenDiva() {
-  var choice = document.querySelector('input[name="Matematica"]:checked');
-  if (choice) {
+  var choice = document.getElementById('Matematica');
+  if (choice.checked) {
     var hiddenDiv = document.getElementById('d2a');
     hiddenDiv.classList.remove('hidden');
   } 
@@ -167,8 +167,8 @@ function showHiddenDiva() {
 </script>
     <script>
 function showHiddenDivb() {
-  var choice = document.querySelector('input[name="Scienze"]:checked');
-  if (choice) {
+  var choice = document.getElementById('Scienze');
+  if (choice.checked) {
     var hiddenDiv = document.getElementById('d2b');
     hiddenDiv.classList.remove('hidden');
   } 
