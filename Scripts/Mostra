@@ -1,3 +1,0 @@
-document.getElementById('b1').onclick=function(){
-  document.getElementById('domanda2').style.display='Show';
-};
