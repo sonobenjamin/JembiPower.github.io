@@ -97,27 +97,18 @@ A 27 anni Rita consegue la Laurea Magistrale in Medicina e Chirurgia con 110 e l
 Rita studia gli embrioni di pollo ormai da anni e un giorno nota qualcosa che le appare strano: le cellule nervose non si spostano tutte seguendo la medesima direzione, ma si differenziano a seconda della zona dell’embrione in cui finiscono, molto tempo dopo la loro nascita. E addirittura, se ci sono delle cellule in eccesso, ne arrivano altre a portarle via eliminandole. Rita ha davanti a sé le prime evidenze del processo di neurogenesi e capisce che deve esserci un fattore chimico attivo sullo sviluppo dei neuroni.
 Nel 1954, insieme al suo allievo biochimico Stanley Cohen, Rita riesce a isolare una proteina che viene prodotta da quasi tutti i tessuti e in particolare dalle ghiandole esocrine, che viene chiamata Nerve Growth Factor, è il famoso NGF, e nel 1986, insieme a Stanley Cohen, vince il Premio Nobel per la Medicina e la Fisiologia proprio per la scoperta dell’NGF, negli anni successivi torna a dare una mano al CNR e viene nominata ambasciatrice per la FAO.
 A 90 anni a causa di una maculopatia degenerativa Rita diventa parzialmente cieca, e nel 30.12.2012, muore all’età di 103 anni.</p>
-<h1>Quale scienziata sei?</h1>
-    <p>Rispondi alle seguenti domande per scoprire a quale scienziata assomigli di più.</p>
+  <h1>Quale scienziata sei?</h1>
+    <p>Rispondi alle seguenti domande per testare le tue conoscenze.</p>
     <div id="quiz">
         <form action="index.html" method="post">
             <ul id="domande">
                 <li>
-                    <p>Quale campo di studio ti affascina di più?</p>
+                    <p>Quale continente non ha confini con l'Oceano Atlantico?</p>
                     <ul id="risposte">
-                        <li><input type="radio" name="domanda1" value="A"> Matematica</li>
-                        <li><input type="radio" name="domanda1" value="B"> Fisica</li>
-                        <li><input type="radio" name="domanda1" value="C"> Chimica</li>
-                        <li><input type="radio" name="domanda1" value="D"> Scienze</li>
-                    </ul>
-                </li>
-                </ul>
-                    <p>Sei benjamin?</p>
-                    <ul id="risposte">
-                        <li><input type="radio" name="domanda1" value="A">Si</li>
-                        <li><input type="radio" name="domanda1" value="B"> No</li>
-                        <li><input type="radio" name="domanda1" value="C"> Chiaro</li>
-                        <li><input type="radio" name="domanda1" value="D"> Sono Edu</li>
+                        <li><input type="radio" name="domanda1" value="A"> Africa</li>
+                        <li><input type="radio" name="domanda1" value="B"> Asia</li>
+                        <li><input type="radio" name="domanda1" value="C"> Europa</li>
+                        <li><input type="radio" name="domanda1" value="D"> Australia</li>
                     </ul>
                 </li>
                 </ul>
@@ -125,6 +116,19 @@ A 90 anni a causa di una maculopatia degenerativa Rita diventa parzialmente ciec
         </form>
     </div>
     <div id="risultato">
-        </div>
+        <h2>Risultati</h2>
+        <ul>
+            <li>Domanda 1: <strong>Corretta</strong></li>
+            </ul>
+    </div>
+    <button id="pulsante-risultato">Mostra risultato</button>
+    <script>
+        const pulsanteRisultato = document.getElementById("pulsante-risultato");
+        const risultato = document.getElementById("risultato");
+
+        pulsanteRisultato.addEventListener("click", () => {
+            risultato.style.display = "block";
+        });
+    </script>
 </body>
 </html>
