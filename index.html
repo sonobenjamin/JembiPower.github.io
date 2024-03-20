@@ -100,7 +100,7 @@ A 90 anni a causa di una maculopatia degenerativa Rita diventa parzialmente ciec
   <h1>Quale scienziata sei?</h1>
     <p>Rispondi alle seguenti domande per testare le tue conoscenze.</p>
     <div id="quiz">
-        <form action="index.html" method="post">
+        <form id="domanda1">
             <ul id="domande">
                 <li>
                     <p>Quale continente non ha confini con l'Oceano Atlantico?</p>
@@ -112,20 +112,23 @@ A 90 anni a causa di una maculopatia degenerativa Rita diventa parzialmente ciec
                     </ul>
                 </li>
                 </ul>
+                <input type="submit" value="Invia">
+           </form>
     </div>
     <div id="quiz">
+      <form id="domanda2">
             <ul id="domande">
                 <li>
                     <p>Quale continente non ha confini con l'Oceano Atlantico?</p>
                     <ul id="risposte">
-                        <li><input type="radio" name="domanda1" value="A"> Africa</li>
-                        <li><input type="radio" name="domanda1" value="B"> Asia</li>
-                        <li><input type="radio" name="domanda1" value="C"> Europa</li>
-                        <li><input type="radio" name="domanda1" value="D"> Australia</li>
+                        <li><input type="radio" name="domanda2" value="A"> Africa</li>
+                        <li><input type="radio" name="domanda2" value="B"> Asia</li>
+                        <li><input type="radio" name="domanda2" value="C"> Europa</li>
+                        <li><input type="radio" name="domanda2" value="D"> Australia</li>
                     </ul>
                 </li>
                 </ul>
-            <input type="submit" value="Invia">
+        <input type="submit" value="Invia">
         </form>
     </div>
     <div id="risultato">
@@ -134,7 +137,7 @@ A 90 anni a causa di una maculopatia degenerativa Rita diventa parzialmente ciec
             <li>Domanda 1: <strong>Corretta</strong></li>
             </ul>
     </div>
-    <button id="pulsante-risultato">Mostra risultato</button>
+    <button id="pulsante-risultato" form="domanda1 domanda2">Mostra risultato</button>
     <script>
         const pulsanteRisultato = document.getElementById("pulsante-risultato");
         const risultato = document.getElementById("risultato");
