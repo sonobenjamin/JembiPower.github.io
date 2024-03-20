@@ -110,23 +110,36 @@ A 90 anni a causa di una maculopatia degenerativa Rita diventa parzialmente ciec
                     </ul>
                 </li>
                 </ul>
-              <button id="pulsante-risultato" form="domanda1">Mostra risultato</button>
            </form>
     </div>
-    <div id="d2">
-      <form id="domanda2" hidden>
+      <div id="d2a" hidden>
+        <form id="domanda2a">
             <ul>
                 <li>
                     <p>Quale continente non ha confini con l'Oceano Atlantico?</p>
                     <ul id="risposte">
-                        <li><input id="r1" type="radio" name="domanda2" value="A"> Africa</li>
-                        <li><input id="r2" type="radio" name="domanda2" value="B"> Asia</li>
-                        <li><input id="r3" type="radio" name="domanda2" value="C"> Europa</li>
-                        <li><input id="r4" type="radio" name="domanda2" value="D"> Australia</li>
+                        <li><input type="radio" name="domanda1" value="A"> Algebra</li>
+                        <li><input type="radio" name="domanda1" value="B"> Geometria</li>
+                    </ul>
+                </li>
+                </ul>
+           </form>
+    </div>
+    <div id="d2b" hidden>
+      <form id="domanda2b">
+            <ul>
+                <li>
+                    <p>Quale continente non ha confini con l'Oceano Atlantico?</p>
+                    <ul id="risposte">
+                        <li><input id="r1" type="radio" name="domanda2" value="A"> Fisica</li>
+                        <li><input id="r2" type="radio" name="domanda2" value="B"> Chimica</li>
+                        <li><input id="r3" type="radio" name="domanda2" value="C"> Biologia</li>
+                        <li><input id="r4" type="radio" name="domanda2" value="D"> Astronomia</li>
                     </ul>
                 </li>
                 </ul>
         </form>
+                    <button id="pulsante-risultato" form="domanda1 domanda2a domanda2b" onclick="showHiddenDiva() showHiddenDivb()">Scegli</button>
     </div>
     <div id="risultato">
         <h2>Risultati</h2>
@@ -134,14 +147,31 @@ A 90 anni a causa di una maculopatia degenerativa Rita diventa parzialmente ciec
             <li>Domanda 1: <strong>Corretta</strong></li>
             </ul>
     </div>
-    <button id="pulsante-risultato" form="domanda1 domanda2">Mostra risultato</button>
+  <script>
+function showHiddenDiva() {
+  var choice = document.querySelector('input[name="Matematica"]:checked');
+  if (choice) {
+    var hiddenDiv = document.getElementById('d2a');
+    hiddenDiv.classList.remove('hidden');
+  } 
+  else {
+        var hiddenDiv = document.getElementById('d2a');
+    hiddenDiv.classList.add('hidden'); 
+  }
+}
+</script>
     <script>
-        const pulsanteRisultato = document.getElementById("pulsante-risultato");
-        const risultato = document.getElementById("risultato");
-
-        pulsanteRisultato.addEventListener("click", () => {
-            risultato.style.display = "block";
-        });
-    </script>
+function showHiddenDivb() {
+  var choice = document.querySelector('input[name="Scienze"]:checked');
+  if (choice) {
+    var hiddenDiv = document.getElementById('d2b');
+    hiddenDiv.classList.remove('hidden');
+  } 
+  else {
+        var hiddenDiv = document.getElementById('d2b');
+    hiddenDiv.classList.add('hidden'); 
+  }
+}
+</script>
 </body>
 </html>
