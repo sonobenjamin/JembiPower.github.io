@@ -78,7 +78,7 @@ sono state migliaia!</p>
                 </ul>
         </form>
     </div>
-                      <button id="pulsante-risultato" onclick="showHiddenDiva(); showHiddenDivb();">Scegli</button>
+                      <button id="pulsante-risultato" onclick="showHiddenDiva(); showHiddenDivb(); Algebra(); Geometria(); Biologia(); Chimica(); Fisica(); Astronomia()">Scegli</button>
   <script>
 function showHiddenDiva() {
   var choice = document.getElementById('Matematica');
@@ -89,6 +89,8 @@ function showHiddenDiva() {
     else {
         var hiddenDiv = document.getElementById('d2a');
     hiddenDiv.classList.add('hidden'); 
+    document.getElementById('Algebra').checked = false;
+    document.getElementById('Geometria').checked = false;
   }
 }
 </script>
@@ -102,6 +104,70 @@ function showHiddenDivb() {
   else {
         var hiddenDiv = document.getElementById('d2b');
     hiddenDiv.classList.add('hidden'); 
+    document.getElementById('Fisica').checked = false;
+    document.getElementById('Chimica').checked = false;
+    document.getElementById('Biologia').checked = false;
+    document.getElementById('Astronomia').checked = false;
+  }
+}
+</script>
+<script>
+function Geometria() {
+  var choice = document.getElementById('Geometria');
+  if (choice.checked) {
+    window.open('Geometria.html', '_blank');
+  } 
+    else {
+  }
+}
+</script>
+<script>
+function Algebra() {
+  var choice = document.getElementById('Algebra');
+  if (choice.checked) {
+    window.open('Algebra.html', '_blank');
+  } 
+    else {
+  }
+}
+</script>
+<script>
+function Chimica() {
+  var choice = document.getElementById('Chimica');
+  if (choice.checked) {
+    window.open('Chimica.html', '_blank');
+  } 
+    else {
+  }
+}
+</script>
+<script>
+function Fisica() {
+  var choice = document.getElementById('Fisica');
+  if (choice.checked) {
+    window.open('Fisica.html', '_blank');
+  } 
+    else {
+  }
+}
+</script>
+<script>
+function Biologia() {
+  var choice = document.getElementById('Biologia');
+  if (choice.checked) {
+    window.open('Biologia.html', '_blank');
+  } 
+    else {
+  }
+}
+</script>
+<script>
+function Astronomia() {
+  var choice = document.getElementById('Astronomia');
+  if (choice.checked) {
+    window.open('Astronomia.html', '_blank');
+  } 
+    else {
   }
 }
 </script>
